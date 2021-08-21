@@ -4,6 +4,8 @@
     <!-- permite que mi emulador tenga permiso a internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
 
     <application
         android:allowBackup="true"
@@ -12,7 +14,11 @@
 
         android:supportsRtl="true"
         android:theme="@style/Theme.SocialTelecomunication">
-        <activity android:name=".activities.PostActivity"></activity>
+
+
+
+
+        <activity android:name=".activities.PostActivity" />
         <activity android:name=".activities.CompleteProfileActivity" />
         <activity android:name=".activities.HomeActivity" />
         <activity android:name=".activities.RegisterActivity" />

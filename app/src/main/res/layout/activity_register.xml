@@ -199,12 +199,12 @@
     
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/cicleImageBack"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/ic_atras"
         app:civ_circle_background_color="@color/white"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="10dp"
         />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

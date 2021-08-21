@@ -22,23 +22,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Crear Publicación"
+                android:text="CREAR PUBLICACIÓN"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="40dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="10dp">
@@ -55,7 +55,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="10dp">
@@ -86,7 +86,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="2.5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:src="@drawable/ic_add_orange" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -118,7 +118,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="2.5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:src="@drawable/ic_description_orange" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -138,6 +138,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/textViewCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Categoria"
@@ -178,6 +179,7 @@
                     app:cardElevation="10dp">
 
                     <ImageView
+                        android:id="@+id/imageViewPC"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/ico_pc"
@@ -213,6 +215,7 @@
                     app:cardElevation="10dp">
 
                     <ImageView
+                        android:id="@+id/imageViewNintendo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/ico_nintendo"
@@ -247,6 +250,7 @@
                     app:cardElevation="10dp">
 
                     <ImageView
+                        android:id="@+id/imageViewPS"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/ico_ps4"
@@ -257,7 +261,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="PS4"
+                    android:text="PS"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -281,6 +285,7 @@
                     app:cardElevation="10dp">
 
                     <ImageView
+                        android:id="@+id/imageViewXbox"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/ico_xbox"
@@ -316,5 +321,13 @@
         android:layout_margin="30dp"
         android:textColor="@color/white"/>
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cicleImageBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_atras_white"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

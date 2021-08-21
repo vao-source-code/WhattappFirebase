@@ -26,21 +26,19 @@ import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 
-enum class ProviderType {
-    BASIC, GOOGLE
-}
+
 
 class MainActivity : AppCompatActivity() {
     //Declaracion de Componentes
-    lateinit var mTextViewRegister: TextView
-    lateinit var mTextInputEmail: TextInputEditText
-    lateinit var mTextInputPassword: TextInputEditText
-    lateinit var mBtnLogin: Button
-     lateinit var mAuthProvider: AuthProvider
-    lateinit var mBtnLoginGoogle: SignInButton
-    lateinit var googleSignInClient: GoogleSignInClient
-    lateinit var mFirebaseFirestore: FirebaseFirestore
-    lateinit var mAlertDialog: AlertDialog
+    private lateinit var mTextViewRegister: TextView
+    private lateinit var mTextInputEmail: TextInputEditText
+    private lateinit var mTextInputPassword: TextInputEditText
+    private lateinit var mBtnLogin: Button
+    private lateinit var mAuthProvider: AuthProvider
+    private lateinit var mBtnLoginGoogle: SignInButton
+    private lateinit var googleSignInClient: GoogleSignInClient
+    private lateinit var mFirebaseFirestore: FirebaseFirestore
+    private lateinit var mAlertDialog: AlertDialog
 
     val  GOOGLE_SIGN_IN : Int  = 100
 
@@ -54,10 +52,7 @@ class MainActivity : AppCompatActivity() {
 
         mFirebaseFirestore = FirebaseFirestore.getInstance()
         mAuthProvider = AuthProvider()
-        mAlertDialog = SpotsDialog.Builder()
-            .setContext(this)
-            .setMessage("Cargando ...")
-            .setCancelable(false).build()
+
 
         iniciarSesionGoogle()
 
@@ -118,7 +113,6 @@ class MainActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
 
-                    showHomeActivity()
 
                 } else {
 
@@ -169,6 +163,13 @@ class MainActivity : AppCompatActivity() {
         mTextInputPassword = findViewById(R.id.textInputPassword);
         mBtnLogin = findViewById(R.id.btnLogin);
         mBtnLoginGoogle = findViewById(R.id.btnLoginGoogle)
+
+        //alertDialog
+        mAlertDialog = SpotsDialog.Builder()
+            .setContext(this)
+            .setMessage("Cargando  ...")
+            .setCancelable(false).build()
+
 
 
     }
